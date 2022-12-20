@@ -1,0 +1,71 @@
+.posterContainer {
+    background-color: rgb(24, 24, 24);
+    padding: 1em;
+    border-radius: .5em;
+    position: relative;
+}
+
+.posterLink {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1em;
+    padding: .7em;
+    border-bottom-left-radius: 1em;
+    background-color: rgb(255, 0, 0, .1);
+    transition: all .2s;
+    z-index: 99909;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgb(255, 0, 0, .5);
+    width: 1.1em;
+    padding: .8em;
+}
+
+.poster {
+    width: 15em;
+    height: auto;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.poster:hover {
+    scale: 1.02;
+}
+
+.loadingPoster {
+    margin: 10em;
+    width: 5em;
+    height: auto;
+}
+
+.linker {
+    text-decoration: none;
+    text-align: center;
+}
+
+.posterHeader {
+    color: rgb(232, 230, 227);
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 778px) {
+    .posterHeader {
+        font-size: 1.1em;
+    }
+}

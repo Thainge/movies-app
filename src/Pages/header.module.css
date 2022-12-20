@@ -1,0 +1,66 @@
+.headerContainer {
+    border-bottom: .1em solid rgb(232, 230, 227);
+    padding-bottom: 2em;
+}
+
+.h1El {
+    color: rgb(232, 230, 227);
+    margin-top: 1em;
+}
+
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.liEl .link {
+    display: block;
+    color: rgb(232, 230, 227);
+    text-align: center;
+    padding: 1.4em 4em;
+    text-decoration: none;
+    border-bottom: .1em solid black;
+    letter-spacing: .2em;
+    background-color: rgb(11, 12, 13);
+}
+
+/* Change the link color to #111 (black) on hover */
+.liEl .link:hover {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.activeLi {
+    display: block;
+    color: rgb(232, 230, 227);
+    text-align: center;
+    padding: 1.4em 4em;
+    text-decoration: none;
+    border-bottom: .1em solid black;
+    letter-spacing: .2em;
+    font-weight: bold;
+    background-color: rgb(11, 12, 13);
+}
+
+.activeLi .link:hover {
+    background-color: rgb(30, 30, 30);
+    color: rgb(194, 5, 5);
+}
+
+.moviedb {
+    height: .75em;
+    width: auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,139 @@
+.MoviesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, max-content));
+    column-gap: 1em;
+    row-gap: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-right: 10em;
+    margin-left: 10em;
+    justify-content: center;
+    background-color: rgb(11, 12, 13);
+    padding-bottom: 3em;
+}
+
+.containerInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10em;
+    margin-left: 10em;
+}
+
+.fileText:hover {
+    scale: 1.03;
+}
+
+.containerInput>.disabledInput {
+    display: none;
+}
+
+.header {
+    margin-top: 2em;
+    color: rgb(232, 230, 227);
+    text-align: center;
+}
+
+.reload {
+    height: 3em;
+    width: auto;
+}
+
+.fileText {
+    color: rgb(232, 230, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchInput {
+    background-color: rgb(26, 26, 26);
+    color: rgb(232, 230, 227);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 20em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none;
+    border-bottom: 2px solid rgb(20, 20, 20);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.searchInput:hover {
+    background-color: rgb(24, 24, 24);
+}
+
+.searchInput:active,
+.searchInput:focus {
+    outline: none;
+}
+
+.imageLoading {
+    width: 3em;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (max-width: 912px) {
+    .searchInput {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    .searchInput {
+        width: 20vw;
+    }
+
+    .containerInput {
+        margin-right: 5em;
+        margin-left: 5em;
+    }
+
+    .MoviesContainer {
+        padding-right: 2em;
+        padding-left: 2em;
+        margin-right: 5em;
+        margin-left: 5em;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .searchInput {
+        width: 20em;
+        border-radius: 1em;
+        margin: 1em;
+        margin-bottom: 2em;
+    }
+
+    .containerInput {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .searchInput {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .MoviesContainer {
+        background-color: transparent;
+    }
+
+    .fileText {
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 448px) {
+    .MoviesContainer {
+        margin: 0;
+    }
+}

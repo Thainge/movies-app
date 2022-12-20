@@ -1,0 +1,10 @@
+html {
+    background-color: rgb(24, 24, 24);
+}
+
+body {
+    background-color: black;
+    padding-bottom: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(232, 230, 227);
+}
